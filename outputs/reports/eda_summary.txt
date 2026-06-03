@@ -1,0 +1,45 @@
+=== RESUMEN EDA ===
+
+Shape: (6497, 13)
+
+Tipos de datos:
+fixed_acidity           float64
+volatile_acidity        float64
+citric_acid             float64
+residual_sugar          float64
+chlorides               float64
+free_sulfur_dioxide     float64
+total_sulfur_dioxide    float64
+density                 float64
+pH                      float64
+sulphates               float64
+alcohol                 float64
+quality                   int64
+wine_type                 int64
+
+Valores faltantes:
+fixed_acidity           0
+volatile_acidity        0
+citric_acid             0
+residual_sugar          0
+chlorides               0
+free_sulfur_dioxide     0
+total_sulfur_dioxide    0
+density                 0
+pH                      0
+sulphates               0
+alcohol                 0
+quality                 0
+wine_type               0
+
+Estadísticas descriptivas:
+       fixed_acidity  volatile_acidity  citric_acid  residual_sugar  chlorides  free_sulfur_dioxide  total_sulfur_dioxide    density         pH  sulphates    alcohol    quality  wine_type
+count      6497.0000         6497.0000    6497.0000       6497.0000   6497.000            6497.0000             6497.0000  6497.0000  6497.0000  6497.0000  6497.0000  6497.0000  6497.0000
+mean          7.2153            0.3397       0.3186          5.4432      0.056              30.5253              115.7446     0.9947     3.2185     0.5313    10.4918     5.8184     0.7539
+std           1.2964            0.1646       0.1453          4.7578      0.035              17.7494               56.5219     0.0030     0.1608     0.1488     1.1927     0.8733     0.4308
+min           3.8000            0.0800       0.0000          0.6000      0.009               1.0000                6.0000     0.9871     2.7200     0.2200     8.0000     3.0000     0.0000
+25%           6.4000            0.2300       0.2500          1.8000      0.038              17.0000               77.0000     0.9923     3.1100     0.4300     9.5000     5.0000     1.0000
+50%           7.0000            0.2900       0.3100          3.0000      0.047              29.0000              118.0000     0.9949     3.2100     0.5100    10.3000     6.0000     1.0000
+75%           7.7000            0.4000       0.3900          8.1000      0.065              41.0000              156.0000     0.9970     3.3200     0.6000    11.3000     6.0000     1.0000
+max          15.9000            1.5800       1.6600         65.8000      0.611             289.0000              440.0000     1.0390     4.0100     2.0000    14.9000     9.0000     1.0000
+

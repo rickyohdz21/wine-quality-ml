@@ -1,0 +1,4 @@
+Model,CV_F1_macro_mean,CV_F1_macro_std,Test_Accuracy,Test_Precision_macro,Test_Recall_macro,Test_F1_macro
+ExtraTrees,0.5478,0.0047,0.8631,0.8478,0.5621,0.6142
+RandomForest,0.5372,0.0024,0.8638,0.8898,0.5622,0.6075
+LightGBM,0.544,0.0027,0.8562,0.8432,0.596,0.6537

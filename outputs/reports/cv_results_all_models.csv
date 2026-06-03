@@ -1,0 +1,10 @@
+Model,Balancing,CV_F1_mean,CV_F1_std,Time_s,Best_params
+ExtraTrees,smote,0.6838781323341423,0.031833695691842294,62.0,"{'clf__max_depth': 30, 'clf__max_features': 'sqrt', 'clf__min_samples_leaf': 1, 'clf__min_samples_split': 3, 'clf__n_estimators': 229}"
+RandomForest,smote,0.6713702174722375,0.026360959329799625,282.4,"{'clf__max_depth': 30, 'clf__max_features': 'sqrt', 'clf__min_samples_leaf': 1, 'clf__min_samples_split': 3, 'clf__n_estimators': 229}"
+LightGBM,smote,0.6702153796444883,0.03390617675789359,388.8,"{'clf__colsample_bytree': np.float64(0.8182017987230057), 'clf__learning_rate': np.float64(0.09639367140133263), 'clf__min_child_samples': 21, 'clf__n_estimators': 277, 'clf__num_leaves': 143, 'clf__reg_alpha': np.float64(0.00032658889469640133), 'clf__reg_lambda': np.float64(0.17571818426047645), 'clf__subsample': np.float64(0.9103197378719776)}"
+XGBoost,smote,0.6623309455909461,0.03119605823348164,94.2,"{'clf__colsample_bytree': np.float64(0.6750392038473378), 'clf__learning_rate': np.float64(0.03962773495221612), 'clf__max_depth': 9, 'clf__min_child_weight': 1, 'clf__n_estimators': 416, 'clf__reg_alpha': np.float64(0.009925982828198466), 'clf__reg_lambda': np.float64(0.019409609450297467), 'clf__subsample': np.float64(0.8842770071531545)}"
+GradientBoosting,smote,0.65501725900371,0.0287784033108353,262.5,"{'clf__learning_rate': np.float64(0.1267250518284891), 'clf__max_depth': 7, 'clf__min_samples_split': 15, 'clf__n_estimators': 382, 'clf__subsample': np.float64(0.7613664146909971)}"
+MLPClassifier,smote,0.641226711659391,0.017932732981807663,945.5,"{'clf__activation': 'tanh', 'clf__alpha': np.float64(0.016394127471631596), 'clf__hidden_layer_sizes': (128, 64), 'clf__learning_rate_init': np.float64(0.0006808005465661975)}"
+SVC,smote,0.6138330369437008,0.02888352531589521,1326.0,"{'clf__C': np.float64(272.9378165037474), 'clf__gamma': 'scale', 'clf__kernel': 'rbf'}"
+LogisticRegression,smote,0.5317244363026676,0.022138176930062325,36.2,"{'clf__C': np.float64(0.0014340571602734114), 'clf__penalty': 'l2'}"
+CatBoost,smote,0.0,0.0,0.0,ERROR: catboost/libs/train_lib/dir_helper.cpp:20: Can't create train working dir: catboost_info
