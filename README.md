@@ -23,7 +23,7 @@
 
 Este proyecto es muy especial para mí porque fue mi **primer proyecto de Machine Learning**. Y la verdad, si hoy me preguntas cuál proyecto recuerdo con más cariño, probablemente sea este.
 
-Todo comenzó en **tercer semestre**, en la materia de Investigación Aplicada. Mis compañeros de Ingeniería Industrial y yo teníamos que elegir un proyecto para desarrollar durante el semestre. Después de buscar varias opciones, encontramos un dataset sobre la calidad de los vinos y nos pareció interesante.
+Todo comenzó en **tercer semestre**, en la materia de Investigación Aplicada. Mis compañeros de Ingeniería en Ciencia de Datos y yo teníamos que elegir un proyecto para desarrollar durante el semestre. Después de buscar varias opciones, encontramos un dataset sobre la calidad de los vinos y nos pareció interesante.
 
 La idea original era relativamente simple: analizar si existía una correlación lineal entre las variables fisicoquímicas y la calidad del vino. Sin embargo, mientras llevaba materias como Estadística y Cálculo, ya empezaba a darme cuenta de que el mundo real rara vez es tan sencillo. No todas las relaciones son lineales y, además, existía la posibilidad de construir modelos capaces de hacer predicciones.
 
@@ -217,7 +217,7 @@ La aplicación permite ingresar las variables fisicoquímicas de un vino y obten
 ## 📬 Contacto
 
 **Ricardo Ortega Hernández**
-Estudiante de Ingeniería Industrial — Universidad de Celaya
+Estudiante de Ingeniería en Ciencia de Datos — Universidad de Celaya
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/TU_USUARIO)
 [![GitHub](https://img.shields.io/badge/GitHub-Perfil-181717?style=for-the-badge&logo=github)](https://github.com/TU_USUARIO)
