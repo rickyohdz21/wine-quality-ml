@@ -219,7 +219,7 @@ La aplicación permite ingresar las variables fisicoquímicas de un vino y obten
 **Ricardo Ortega Hernández**
 Estudiante de Ingeniería en Ciencia de Datos — Universidad de Celaya
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/rickyohdz21)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/ricardo-ortega-data)
 [![GitHub](https://img.shields.io/badge/GitHub-Perfil-181717?style=for-the-badge&logo=github)](https://github.com/rickyohdz21)
 
 ---
