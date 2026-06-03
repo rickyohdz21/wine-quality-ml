@@ -174,7 +174,7 @@ Las 10 nuevas variables creadas a partir del conocimiento químico del dominio:
 
 ```bash
 # 1. Clonar el repositorio
-git clone https://github.com/TU_USUARIO/wine-quality-ml.git
+git clone https://github.com/rickyohdz21/wine-quality-ml.git
 cd wine-quality-ml
 
 # 2. Instalar dependencias
@@ -219,8 +219,8 @@ La aplicación permite ingresar las variables fisicoquímicas de un vino y obten
 **Ricardo Ortega Hernández**
 Estudiante de Ingeniería en Ciencia de Datos — Universidad de Celaya
 
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/TU_USUARIO)
-[![GitHub](https://img.shields.io/badge/GitHub-Perfil-181717?style=for-the-badge&logo=github)](https://github.com/TU_USUARIO)
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Conectar-0077B5?style=for-the-badge&logo=linkedin)](https://linkedin.com/in/rickyohdz21)
+[![GitHub](https://img.shields.io/badge/GitHub-Perfil-181717?style=for-the-badge&logo=github)](https://github.com/rickyohdz21)
 
 ---
 
