@@ -23,7 +23,7 @@
 
 Este proyecto es muy especial para mí porque fue mi **primer proyecto de Machine Learning**. Y la verdad, si hoy me preguntas cuál proyecto recuerdo con más cariño, probablemente sea este.
 
-Todo comenzó en **tercer semestre**, en la materia de Investigación Aplicada. Mis compañeros de Ingeniería en Ciencia de Datos y yo teníamos que elegir un proyecto para desarrollar durante el semestre. Después de buscar varias opciones, encontramos un dataset sobre la calidad de los vinos y nos pareció interesante.
+Todo comenzó en **tercer semestre**, en la materia de Investigación Aplicada. Mis compañeros de Ingeniería Industrial y yo teníamos que elegir un proyecto para desarrollar durante el semestre. Después de buscar varias opciones, encontramos un dataset sobre la calidad de los vinos y nos pareció interesante.
 
 La idea original era relativamente simple: analizar si existía una correlación lineal entre las variables fisicoquímicas y la calidad del vino. Sin embargo, mientras llevaba materias como Estadística y Cálculo, ya empezaba a darme cuenta de que el mundo real rara vez es tan sencillo. No todas las relaciones son lineales y, además, existía la posibilidad de construir modelos capaces de hacer predicciones.
 
@@ -72,6 +72,42 @@ Pasamos de probar un par de modelos a **evaluar más de nueve algoritmos distint
 Además de mejorar la ingeniería de características, incorporamos herramientas que no existían en la versión original: **Optuna** para optimización automática de hiperparámetros, **SHAP** para interpretar las predicciones, y una estructura de proyecto limpia, reproducible y cercana a un flujo de trabajo profesional.
 
 A pesar de que seguirá teniendo detalles a mejorar, es un proyecto que me ha hecho crecer bastante como ser humano y como profesional. Estoy completamente agradecido con todos los que fueron parte de esto — me ha motivado a seguir aprendiendo.
+
+---
+
+## 🍾 ¿Por qué mezclar vino tinto y blanco en un solo dataset?
+
+Es una decisión que merece explicarse, porque no es obvia.
+
+La primera pregunta que surge al ver el dataset es: **¿tiene sentido entrenar un solo modelo para dos tipos de vino tan distintos?** La respuesta corta es sí — pero con matices.
+
+### La calidad del vino es subjetiva por naturaleza
+
+La variable `quality` no es una medición objetiva de laboratorio. Es el resultado de **catas a ciegas realizadas por evaluadores humanos**, quienes asignaron una puntuación del 0 al 10. Al ser una percepción sensorial promediada entre jueces, introduce ruido subjetivo inherente al dominio — dos vinos con propiedades fisicoquímicas casi idénticas pueden recibir calificaciones distintas, y un vino "bueno" en la categoría tinto no necesariamente tiene los mismos valores que un vino "bueno" en la categoría blanco.
+
+Esto significa que el problema ya tiene ruido intrínseco desde el origen: no es un bug del dataset, es la realidad del dominio.
+
+*(Fuente: Cortez et al., 2009 — "Modeling wine preferences by data mining from physicochemical properties")*
+
+### Las distribuciones son distintas
+
+Los dos tipos de vino viven en espacios químicos muy diferentes:
+
+| Variable | Tinto (media) | Blanco (media) |
+|----------|--------------|----------------|
+| `residual_sugar` | 2.5 g/L | 6.4 g/L |
+| `total_sulfur_dioxide` | 46 mg/L | 138 mg/L |
+| `volatile_acidity` | 0.53 g/L | 0.28 g/L |
+
+Si simplemente concatenáramos los datos sin indicarle al modelo que son categorías distintas, estaríamos introduciéndole ruido innecesario — los mismos valores de SO₂ total significan cosas completamente diferentes en cada tipo.
+
+### La solución: `wine_type` como feature explícita
+
+Por eso se agregó una variable binaria `wine_type` (0 = tinto, 1 = blanco). Esto le da al modelo el contexto necesario para aprender **reglas de calidad diferenciadas por tipo**, en lugar de intentar encontrar un patrón único que mezcle dos realidades distintas.
+
+Mezclar ambos datasets también tiene una ventaja práctica: pasar de 1,599 a **6,497 muestras** mejora la capacidad de generalización del modelo y hace que las métricas de evaluación sean estadísticamente más robustas.
+
+> **¿Habría sido más riguroso entrenar dos modelos separados?** Sí — y sería el siguiente paso natural si el objetivo fuera producción. Pero un modelo unificado con `wine_type` como feature es perfectamente válido para análisis y portafolio, y de hecho más interesante: el modelo aprende a trabajar con la heterogeneidad del mundo real.
 
 ---
 
